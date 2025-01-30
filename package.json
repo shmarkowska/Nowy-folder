@@ -1,0 +1,17 @@
+{
+  "name": "nowy-folder",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "phaser": "^3.87.0",
+    "jsdom": "^22.1.0"
+  }
+}
