@@ -1,10 +1,10 @@
 //parameters
 export const ENEMY_DEFINITIONS = [
   { texture: 'enemy1', hp: 10, speed: 80, xpValue: 20, minLevel: 1 },
-  { texture: 'enemy2', hp: 20, speed: 90, xpValue: 50, minLevel: 200 },
-  { texture: 'enemy3', hp: 40, speed: 100, xpValue: 100, minLevel: 200 },
-  { texture: 'enemy4', hp: 60, speed: 110, xpValue: 180, minLevel: 200 },
-  { texture: 'enemy5', hp: 120, speed: 120, xpValue: 300, minLevel: 200 }
+  { texture: 'enemy2', hp: 20, speed: 90, xpValue: 50, minLevel: 3 },
+  { texture: 'enemy3', hp: 40, speed: 100, xpValue: 100, minLevel: 6 },
+  { texture: 'enemy4', hp: 60, speed: 110, xpValue: 180, minLevel: 10},
+  { texture: 'enemy5', hp: 120, speed: 120, xpValue: 300, minLevel: 12 }
 ];
 
 export function spawnEnemy(scene, player) {

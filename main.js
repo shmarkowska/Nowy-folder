@@ -69,13 +69,13 @@ class MainScene extends Phaser.Scene {
       16,
       this.cameras.main.height - 60,
       `HP: ${this.player.hp}/${this.player.maxHp}`,
-      { fontSize: '30px', fill: '#0a0303' }
+      { fontSize: '30px', fill: '#0a0303', backgroundColor: 'rgba(255, 255, 255, 0.7)' }
     );
     this.levelText = this.add.text(
       16,
-      this.cameras.main.height - 40,
+      this.cameras.main.height - 31,
       `Level: ${this.player.level} | XP: ${this.player.xp}/${this.player.nextLevelXp}`,
-      { fontSize: '30px', fill: '#0a0303' }
+      { fontSize: '20px', fill: '#0a0303', backgroundColor: 'rgba(255, 255, 255, 0.7)' }
     );
 
     //spawn event
@@ -115,7 +115,7 @@ class MainScene extends Phaser.Scene {
           const y = enemy.y;
           enemy.destroy();
           this.gainXp(enemy.xpValue);
-          trySpawnHealthPack(this, x, y, 0.05);
+          trySpawnHealthPack(this, x, y, 0.1);
         }
       }
     );
@@ -223,7 +223,7 @@ class MainScene extends Phaser.Scene {
       const y = enemy.y;
       enemy.destroy();
       this.gainXp(enemy.xpValue);
-      trySpawnHealthPack(this, x, y, 0.05);
+      trySpawnHealthPack(this, x, y, 0.1);
     }
   }
 
@@ -235,7 +235,7 @@ class MainScene extends Phaser.Scene {
       const y = enemy.y;
       enemy.destroy();
       this.gainXp(enemy.xpValue);
-      trySpawnHealthPack(this, x, y, 0.05);
+      trySpawnHealthPack(this, x, y, 0.1);
     }
   }
 
@@ -283,7 +283,7 @@ class MainScene extends Phaser.Scene {
   }
 
   trySpawnHealthPack(x, y) {
-    trySpawnHealthPack(this, x, y, 0.05);
+    trySpawnHealthPack(this, x, y, 0.1);
   }
 
   //powerup sys
